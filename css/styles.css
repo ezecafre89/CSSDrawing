@@ -1,0 +1,54 @@
+/**
+ *
+ *
+ */
+
+body {
+
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-inner {
+	background: #1D7E5B;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar .brand {
+  color: #FFF;
+  text-shadow: 0 1px 0 #222;
+}
+
+.navbar-inner .nav {
+  color: #EEE;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #EEE;
+  background: #83b39d;
+  text-shadow: 1px 1px 1px #444;
+}
+
+.navbar .nav > li > a {
+  color: #FFF;
+  text-shadow: 1px 1px 1px #444;
+}
+
+.sidebar {
+  position: fixed;
+  background: #232323;
+  height: 100%;
+}
+
+.main-content {
+ background: #232323;
+}
+
+.container-fluid {
+  padding-left: 0;
+}
