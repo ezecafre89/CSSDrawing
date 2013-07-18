@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CSS Drawing</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-responsive.min.css" >
+	<title>CSS Drawing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-responsive.min.css" >
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" >
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
   <header class="navbar">
     <div class="navbar-inner">
-      <a class="brand" href="#">CSS Drawings</a>
+      <a class="brand" href="index.html">CSS Drawings</a>
       <ul class="nav">
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="about.html">About me</a></li>
@@ -27,25 +27,24 @@
       </li>
     </ul>
   </div>
-  <div class="container">
-    <div class="thumbnail span3">
-      <img src="images/minion.jpg"/>
-      <div class="caption">
-        <h3>Pure CSS Minion</h3>
-        <p>Entirely made with CSS</p>
-        <p>
-          <a href="minion.html" class="btn flat">Details</a>
-        </p>
+	<div class="container">
+    <ul class="nav nav-pills">
+      <li class="disabled"><a href="#">See it on</a></li>
+      <li><a href="http://codepen.io/ezecafre89/pen/ojnKb" target="_blank" class="reverse">Codepen</a></li>
+      <li><a href="http://cssdeck.com/labs/pure-css-minion" target="_blank" class="reverse">CSSDeck</a></li>
+    </ul>
+    <ul id="tabContent"class="nav nav-tabs">
+      <li class="active">
+        <a href="#code">Code</a>
+      </li>
+      <li><a href="#result">Result</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="code" class="tab-pane fade active in">
+        <script src="https://gist.github.com/ezecafre89/6025690.js"></script>
       </div>
-    </div>
-      <div class="thumbnail span3">
-      <img src="images/minion.jpg"/>
-      <div class="caption">
-        <h3>Pure CSS Mike</h3>
-        <p>Entirely made with CSS</p>
-        <p>
-          <a href="minion.html" class="btn flat">Details</a>
-        </p>
+      <div id="result" class="tab-pane fade">
+
       </div>
     </div>
   </div>

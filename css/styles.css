@@ -7,12 +7,23 @@ body {
 
 }
 
+a {
+  color: #888;
+}
+
+.reverse {
+  color: #34495e;
+}
+
 .navbar {
   margin-bottom: 0;
 }
 
 .navbar-inner {
-	background: #1D7E5B;
+	background: #34495e;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   border-radius: 0;
   border: 0;
 }
@@ -30,7 +41,7 @@ body {
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
   color: #EEE;
-  background: #83b39d;
+  background: #212E3B;
   text-shadow: 1px 1px 1px #444;
 }
 
@@ -39,10 +50,20 @@ body {
   text-shadow: 1px 1px 1px #444;
 }
 
+.navbar .nav > li > a:hover {
+  color: #777;
+}
+
 .sidebar {
-  position: fixed;
-  background: #232323;
+  width: 168px;
   height: 100%;
+  position: fixed;
+  z-index: 1;
+  background: #232323;
+}
+
+.sidebar .nav {
+  margin-top: 60px;
 }
 
 .main-content {
@@ -51,4 +72,57 @@ body {
 
 .container-fluid {
   padding-left: 0;
+}
+
+.nav-stacked > li {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-bottom: 1px solid #444;
+}
+
+.nav-stacked > li:first-child {
+ border-top: 1px solid #444;
+}
+
+.nav-stacked > li > a:hover {
+  background: transparent;
+}
+
+.nav-stacked .odd {
+  border-left: 4px solid #3498db;
+}
+
+.nav-stacked .pair {
+  border-left: 4px solid #34495e;
+}
+
+.container {
+  padding-top: 60px;
+}
+
+.title-name {
+  margin-left: 10px;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.title-occupation {
+  margin-left: 10px;
+  font-size: 1.25em;
+  font-weight: 900;
+  color: #555;
+}
+
+.thumbnail {
+  text-align: center;
+}
+
+.btn.flat {
+  padding: 6px 20px;
+  border: 0;
+  border-radius: 2px;
+  color: #EEE;
+  text-shadow: 1px 1px 1px #333;
+  background: #2c3e50;
 }
